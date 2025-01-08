@@ -1,0 +1,80 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+/* Converter Card */
+.converter-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 350px;
+}
+    
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+select {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
